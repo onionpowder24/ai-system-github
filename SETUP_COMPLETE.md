@@ -16,7 +16,12 @@ nitto-ai-system-github/
 ├── setup/                              # インストーラー
 │   ├── setup_installer.py             # 自動セットアップスクリプト
 │   ├── install.bat                    # Windows一括インストーラー
-│   └── requirements.txt               # Python依存関係
+│   ├── requirements.txt               # Python依存関係
+│   ├── unity_installer_guide.md       # Unity インストールガイド
+│   ├── font_fix_guide.md              # 日本語フォント修正ガイド
+│   └── unity_installer/               # Unity Hub オフラインインストーラー
+│       ├── Unity Hub.exe              # Unity Hub インストーラー (202MB)
+│       └── README.md                  # インストール手順
 ├── python_server/                      # Python APIサーバー
 │   ├── .env.template                  # APIキー設定テンプレート
 │   ├── src/                           # ソースコード
@@ -40,6 +45,7 @@ nitto-ai-system-github/
 - **Python スクリプト**: `setup/setup_installer.py`
 - **Windows バッチ**: `setup/install.bat`
 - **依存関係管理**: `requirements.txt`
+- **Unity Hub インストーラー**: `setup/unity_installer/Unity Hub.exe` (202MB, Git LFS)
 
 ### 3. 包括的ドキュメント ✅
 - **使用方法**: README.md で完全解説
@@ -116,6 +122,7 @@ AZURE_SPEECH_KEY=your_azure_speech_key
 ### Unity プロジェクトの手動コピー
 - **理由**: プロジェクトサイズが大きく、Gitには不適切
 - **対応**: `unity_avatar/README.md` で詳細手順を説明
+- **オフライン対応**: `setup/unity_installer/Unity Hub.exe` でインターネット接続不要でUnity導入可能
 
 ## 🏆 Achievement
 
