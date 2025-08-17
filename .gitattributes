@@ -1,3 +1,4 @@
 *.asset filter=lfs diff=lfs merge=lfs -text
 *.fbx filter=lfs diff=lfs merge=lfs -text
 *.FBX filter=lfs diff=lfs merge=lfs -text
+setup/unity_installer/*.exe filter=lfs diff=lfs merge=lfs -text
