@@ -52,7 +52,8 @@ venv.bak/
 *.code-workspace
 
 # ===== DATABASE =====
-*.db
+# Note: aituber.db は完全再現のために含める
+# *.db
 *.sqlite
 *.sqlite3
 database/
@@ -103,14 +104,16 @@ temp/
 tmp/
 
 # ===== FAISS INDEXES =====
-*.index
-faiss_indexes/
-vector_store/
+# Note: FAISS indexes は完全再現のために含める
+# *.index
+# faiss_indexes/
+# vector_store/
 
 # ===== MODEL FILES =====
 models/
 *.model
-*.pkl
+# Note: pkl ファイルは FAISS 再現に必要
+# *.pkl
 *.pickle
 
 # ===== WINDOWS =====

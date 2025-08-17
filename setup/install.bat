@@ -48,17 +48,15 @@ if not exist "..\python_server\.env" (
     echo ✅ .env ファイルが存在します
 )
 
-REM データベース設定
+REM データベース確認
 echo.
-echo 🗄️ データベース設定中...
-cd ..\python_server
-python -m alembic upgrade head
-if errorlevel 1 (
-    echo ❌ データベース設定に失敗しました
-    pause
-    exit /b 1
+echo 🗄️ データベース確認中...
+if exist "..\python_server\aituber.db" (
+    echo ✅ データベースファイルが存在します
+) else (
+    echo ⚠️  データベースファイルが見つかりません
+    echo    システム初回起動時に自動作成されます
 )
-echo ✅ データベース設定が完了しました
 
 cd ..\setup
 
